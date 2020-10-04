@@ -1,14 +1,31 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Swatch, Logo } from './components';
-import { Header } from './containers';
+import React, { useState } from 'react'
+import logo from './logo.svg'
+import styled from 'styled-components'
+import { Swatch, Logo } from './components'
+import { Header } from './containers'
+
+const StyledWrapper = styled.div`
+  text-align: center;
+  code {
+    background: #fff3;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  p {
+    margin: 0.4rem;
+  }
+
+  a {
+    color: #61dafb;
+  }
+`
+
 function App() {
-  const [count, setCount] = useState(0);
-  setTimeout(() => setCount(count + 1), 1000);
+  const [count, setCount] = useState(0)
+  setTimeout(() => setCount(count + 1), 1000)
 
   return (
-    <div className="App">
+    <StyledWrapper>
       <Header>
         <Logo src={logo} />
         <p>
@@ -19,7 +36,6 @@ function App() {
         </p>
         <p>
           <a
-            className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,9 +46,9 @@ function App() {
 
         <Swatch color="red" />
       </Header>
-    </div>
-  );
+    </StyledWrapper>
+  )
 }
 
-export default App;
+export default App
 

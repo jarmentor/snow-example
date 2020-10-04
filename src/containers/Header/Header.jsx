@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const StyledHeader = styled.header`
   background-color: #282c34;
@@ -10,11 +10,11 @@ const StyledHeader = styled.header`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-`;
+`
 
 const Header = ({ children }) => {
-  return <StyledHeader>{children}</StyledHeader>;
-};
+  return <StyledHeader>{children}</StyledHeader>
+}
 
-export default Header;
+export default Header
 
