@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Swatch from './components/Swatch';
-
+import { Swatch, Logo } from './components';
+import { Header } from './containers';
 function App() {
   const [count, setCount] = useState(0);
   setTimeout(() => setCount(count + 1), 1000);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Header>
+        <Logo src={logo} />
         <p>
           Edit <code>src/App.jsx</code> and save to reload.
         </p>
@@ -28,7 +29,7 @@ function App() {
         </p>
 
         <Swatch color="red" />
-      </header>
+      </Header>
     </div>
   );
 }
