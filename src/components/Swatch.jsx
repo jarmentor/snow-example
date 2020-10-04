@@ -5,7 +5,9 @@ const StyledSwatch = styled.div`
   color: red;
 `;
 
-export const Swatch = ({ color }) => {
+const Swatch = ({ color }) => {
   return <StyledSwatch>{`#${color}`}</StyledSwatch>;
 };
+
+export default Swatch;
 

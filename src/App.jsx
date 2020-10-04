@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Swatch } from './components/swatch';
+import Swatch from './components/Swatch';
 
 function App() {
   const [count, setCount] = useState(0);
