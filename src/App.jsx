@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Swatch } from './components/swatch';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,9 +26,12 @@ function App() {
             Learn React
           </a>
         </p>
+
+        <Swatch color="red" />
       </header>
     </div>
   );
 }
 
 export default App;
+
