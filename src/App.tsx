@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
 import styled from 'styled-components'
-import { Swatch, Logo } from './components'
+import { Logo, Swatch } from './components'
 import { Header } from './containers'
 
 const StyledWrapper = styled.div`
@@ -51,4 +51,3 @@ function App() {
 }
 
 export default App
-

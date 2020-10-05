@@ -1,6 +1,14 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+interface LogoSrc {
+  src: string
+}
+
+const Logo: React.FunctionComponent<LogoSrc> = ({ src }) => (
+  <img src={src} alt="logo" />
+)
+
 const logoSpin = keyframes`
   from {
     transform: rotate(0deg);
@@ -9,8 +17,7 @@ const logoSpin = keyframes`
     transform: rotate(360deg);
   }
 `
-
-const StyledLogo = styled.img`
+const StyledLogo = styled(Logo)`
   height: 40vmin;
   pointer-events: none;
 
@@ -19,7 +26,4 @@ const StyledLogo = styled.img`
   }
 `
 
-const Logo = ({ src }) => <StyledLogo src={src} alt="logo" />
-
-export default Logo
-
+export default StyledLogo
